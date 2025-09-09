@@ -1,0 +1,22 @@
+import "./App.css";
+import AboutSection from "./components/About/AboutSection.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx";
+import HeroCarousel from "./components/Hero/Hero.jsx";
+import ServicesSection from "./components/Services/ServiceSection.jsx";
+import TestimonialSection from "./components/Testimonials/Testimonial.jsx";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <HeroCarousel />
+      <AboutSection />
+      <ServicesSection />
+      <TestimonialSection />
+      <Footer />
+    </>
+  );
+}
+
+export default App;

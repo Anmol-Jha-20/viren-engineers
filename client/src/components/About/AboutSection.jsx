@@ -1,0 +1,184 @@
+import React from "react";
+import { motion } from "framer-motion";
+import AboutImage from "../../assets/About.jpeg";
+
+const AboutSection = () => {
+  return (
+    <section className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          {/* Left Content */}
+          <motion.div
+            className="order-2 lg:order-1"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            {/* About Us Badge */}
+            <motion.div
+              className="inline-flex items-center mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              {/* <div className="bg-orange-400 p-3 rounded-l-lg">
+                <svg
+                  className="w-5 h-5 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div> */}
+              {/* <div className="bg-orange-400 px-4 py-3 rounded-r-lg"> */}
+              <span className="text-orange-400 font-semibold text-xl tracking-wide">
+                About Us
+              </span>
+              {/* </div> */}
+            </motion.div>
+
+            {/* Main Heading */}
+            <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Leaders in Crane & Machine Rentals
+            </motion.h1>
+
+            {/* Experience Badge */}
+            <motion.div
+              className="mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <span className="text-lg font-semibold text-gray-900">
+                5+ Years Experience Working
+              </span>
+            </motion.div>
+
+            {/* Description */}
+            <motion.p
+              className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              Founded in 2020 in Pune, Maharashtra, Viren Engineers and
+              Contractors has quickly become a trusted name in heavy machinery
+              rental services. Specializing in crane and screen machine rentals,
+              we provide reliable, high-performance equipment backed by a team
+              that knows the industry inside out. We don’t believe in delays,
+              shortcuts, or excuses — just solid machines, skilled support, and
+              on-time delivery. Whether it’s a large-scale construction project
+              or a time-sensitive industrial task, we make sure your operations
+              never stop moving.
+            </motion.p>
+
+            {/* Read More Button */}
+            <motion.button
+              className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-orange-300"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              READ MORE
+            </motion.button>
+          </motion.div>
+
+          {/* Right Image */}
+          <motion.div
+            className="order-1 lg:order-2"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="relative">
+              <motion.img
+                src={AboutImage}
+                alt="Modern architecture building with glass facade"
+                className="w-full h-[500px] md:h-[600px] lg:h-[700px] object-cover rounded-2xl shadow-2xl"
+                initial={{ scale: 1.1 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+              />
+
+              {/* Decorative dots pattern */}
+              <motion.div
+                className="absolute -top-4 -right-4 w-20 h-20 opacity-20"
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              >
+                <div className="grid grid-cols-4 gap-1 w-full h-full">
+                  {[...Array(16)].map((_, i) => (
+                    <div key={i} className="bg-gray-400 rounded-full"></div>
+                  ))}
+                </div>
+              </motion.div>
+
+              {/* Decorative dots pattern bottom left */}
+              <motion.div
+                className="absolute -bottom-4 -left-4 w-20 h-20 opacity-20"
+                initial={{ rotate: 0 }}
+                animate={{ rotate: -360 }}
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+              >
+                <div className="grid grid-cols-4 gap-1 w-full h-full">
+                  {[...Array(16)].map((_, i) => (
+                    <div key={i} className="bg-orange-400 rounded-full"></div>
+                  ))}
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* SEO Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Architecture Leader Company",
+          description:
+            "Leading architecture firm with 36 years of experience in creating innovative architectural solutions",
+          foundingDate: "1987",
+          industry: "Architecture and Construction",
+          serviceArea: "Global",
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Architecture Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Architectural Design",
+                },
+              },
+            ],
+          },
+        })}
+      </script>
+    </section>
+  );
+};
+
+export default AboutSection;
