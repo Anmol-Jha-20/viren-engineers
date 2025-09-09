@@ -5,6 +5,7 @@ import Header from "./components/Header/Header.jsx";
 import HeroCarousel from "./components/Hero/Hero.jsx";
 import ServicesSection from "./components/Services/ServiceSection.jsx";
 import TestimonialSection from "./components/Testimonials/Testimonial.jsx";
+import WhyChooseUs from "./components/WhyUs/WhyUsSection.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroCarousel />
       <AboutSection />
       <ServicesSection />
+      <WhyChooseUs />
       <TestimonialSection />
       <Footer />
     </>

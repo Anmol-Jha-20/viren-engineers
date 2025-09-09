@@ -112,7 +112,7 @@ const AboutSection = () => {
               <motion.img
                 src={AboutImage}
                 alt="Modern architecture building with glass facade"
-                className="w-full h-[500px] md:h-[600px] lg:h-[700px] object-cover rounded-2xl shadow-2xl"
+                className="w-full h-[500px] md:h-[500px] lg:h-[500px] object-cover rounded-2xl shadow-2xl"
                 initial={{ scale: 1.1 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
