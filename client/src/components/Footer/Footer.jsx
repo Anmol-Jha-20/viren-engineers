@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import Logo from "../../assets/Logo.png";
 
 const Footer = () => {
   return (
@@ -25,12 +26,13 @@ const Footer = () => {
           {/* Company Info Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="bg-yellow-500 p-2 rounded-sm mr-3">
-                <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
+              <div className="bg-yellow-500 p-1 rounded-sm mr-3">
+                {/* <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
                   <div className="w-4 h-4 bg-gray-800 rounded-sm relative">
                     <div className="absolute top-0 left-0 w-2 h-2 bg-yellow-500 rounded-sm"></div>
                   </div>
-                </div>
+                </div> */}
+                <img src={Logo} className="w-12 h-12" alt="Logo" />
               </div>
               <div>
                 <h2 className="text-xl font-bold text-yellow-500 uppercase">
@@ -60,25 +62,27 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300 text-sm">
-                    185, Pickton Near Street,
+                    Jitendra Image Building 2nd Floor Off. No. 4,
                   </p>
-                  <p className="text-gray-300 text-sm">Los Angeles, USA</p>
+                  <p className="text-gray-300 text-sm">
+                    Karve Rd. Erandwane - 04.
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-yellow-500 mr-3 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">info@sentiment.com</p>
+                <p className="text-gray-300 text-sm">chavanviren14@gmail.com</p>
               </div>
 
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Mail className="w-5 h-5 text-yellow-500 mr-3 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">support@sentiment.com</p>
-              </div>
+              </div> */}
 
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-yellow-500 mr-3 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">1-800-985-357</p>
+                <p className="text-gray-300 text-sm">+91 888 882 2150</p>
               </div>
             </div>
           </div>

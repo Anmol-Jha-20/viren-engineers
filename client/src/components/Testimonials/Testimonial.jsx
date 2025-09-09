@@ -9,28 +9,32 @@ const TestimonialSection = () => {
     {
       id: 1,
       name: "John Christopher",
-      image: "/api/placeholder/80/80",
+      image:
+        "https://expert-themes.com/html/emarat/images/resource/author-1.jpg",
       rating: 5,
       text: "Makin their way the only way they know how that's just a little bit more than the law will allow these happy days are you. leads a rag tag fugitive fleet on a lonely",
     },
     {
       id: 2,
       name: "Stuakrt Mackey",
-      image: "/api/placeholder/80/80",
+      image:
+        "https://expert-themes.com/html/emarat/images/resource/author-2.jpg",
       rating: 5,
       text: "Makin their way the only way they know how that's just a little bit more than the law will allow these happy days are you. leads a rag tag fugitive fleet on a lonely",
     },
     {
       id: 3,
       name: "Sarah Johnson",
-      image: "/api/placeholder/80/80",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       text: "Outstanding service and professionalism. They exceeded all expectations and delivered results beyond what we imagined possible for our business.",
     },
     {
       id: 4,
       name: "Michael Davis",
-      image: "/api/placeholder/80/80",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       text: "Incredible attention to detail and customer service. Working with this team has been one of the best decisions we've made for our company.",
     },

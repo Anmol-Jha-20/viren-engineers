@@ -11,12 +11,12 @@ const HeroCarousel = () => {
       id: 1,
       backgroundImage:
         "https://expert-themes.com/html/emarat/images/main-slider/image-3.jpg",
-      title: "WE BUILD",
-      subtitle: "YOUR DREAM",
+      title: "BUILT TO LEAD",
+      subtitle: "RELIABLE RENTALS",
       description:
-        "we're an elite squad of alpha geeks, creative storytellers and business minds. Together, we mix art and science to turn brands into favorites",
+        'Established in the year 2020 in Pune,Maharashtra, India, We “Viren Engineers And Contractors" engaged as the foremost Service Provider of Crane and Screen Machine Rental Services.',
       buttons: [
-        { text: "OUR WORK", type: "primary" },
+        { text: "ABOUT US", type: "primary" },
         { text: "CONTACT", type: "secondary" },
       ],
     },
@@ -24,11 +24,11 @@ const HeroCarousel = () => {
       id: 2,
       backgroundImage: HeroImage,
       title: "WE ARE THE BEST",
-      subtitle: "CONSTRUCTION EXPERTS",
+      subtitle: "RENTAL EXPERTS",
       description:
-        "we're an elite squad of alpha geeks, creative storytellers and business minds. Together, we mix art and science to turn brands into favorites",
+        'Established in the year 2020 in Pune,Maharashtra, India, We “Viren Engineers And Contractors" engaged as the foremost Service Provider of Crane and Screen Machine Rental Services.',
       buttons: [
-        { text: "OUR WORK", type: "primary" },
+        { text: "ABOUT US", type: "primary" },
         { text: "CONTACT", type: "secondary" },
       ],
     },

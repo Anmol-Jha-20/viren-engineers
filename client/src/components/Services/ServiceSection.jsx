@@ -180,7 +180,8 @@ const ServiceCard = ({ image, icon, title, description, index }) => {
           <div className="absolute bottom-0 left-0 p-6">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 bg-yellow-400 rounded flex items-center justify-center">
-                <div className="text-2xl">{icon}</div>
+                {/* <div className="text-2xl">{icon}</div> */}
+                <img src={icon} className="object-cover h-full w-full" alt="" />
               </div>
               <h3 className="text-white text-xl font-semibold">{title}</h3>
             </div>
@@ -205,7 +206,8 @@ const ServiceCard = ({ image, icon, title, description, index }) => {
 
           <div className="flex items-center space-x-4 mb-6">
             <div className="w-16 h-16 bg-gray-800 rounded flex items-center justify-center">
-              <div className="text-yellow-400 text-2xl">{icon}</div>
+              {/* <div className="text-yellow-400 text-2xl">{icon}</div> */}
+              <img src={icon} className="object-cover h-full w-full" alt="" />
             </div>
             <h3 className="text-gray-800 text-xl font-semibold">{title}</h3>
           </div>
@@ -228,7 +230,7 @@ const ServicesSection = () => {
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/3/494881521/LJ/SB/AW/109289942/earthmoving-equipment-rental-service-500x500.jpeg",
-      icon: "🏗️",
+      icon: "https://5.imimg.com/data5/SELLER/Default/2025/3/494881521/LJ/SB/AW/109289942/earthmoving-equipment-rental-service-500x500.jpeg",
       title: "Rental Service",
       description:
         "Service Provider of a wide range of services which include Sandvik S6 Screen Crusher Machine Rental Service, Hitachi Zaxis 120 Rental Service, Tata Hitachi Super 210 Rental Service, Tata Hitachi 215 Quarry Rental Service, Alpha SP 453 Mobile Tower Crane Rental Service and Earthmoving Equipment Rental Service.",
@@ -236,7 +238,7 @@ const ServicesSection = () => {
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/8/535216439/YB/JH/NK/109289942/tower-crane-rental-500x500.jpeg",
-      icon: "🏗️",
+      icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216439/YB/JH/NK/109289942/tower-crane-rental-500x500.jpeg",
       title: "Tower Crane Rental Services",
       description:
         "Our service range includes a wide range of Mobile Tower Crane Sp 453, Tower Crane Rental, Mobile Tower Crane Rental Service, Construction Tower Crane Rental Service and Tower Crane 2418 Sp 453 Alpha.",
@@ -244,7 +246,7 @@ const ServicesSection = () => {
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/8/535216570/FO/KN/VZ/109289942/screening-machine-500x500.jpeg",
-      icon: "🏗️",
+      icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216570/FO/KN/VZ/109289942/screening-machine-500x500.jpeg",
       title: "Screening Machinery",
       description:
         "Service Provider of a wide range of services which include Kleemann MS 952 Screen Machine, Biomining Screen Machines and Screening Machine.",
@@ -252,7 +254,7 @@ const ServicesSection = () => {
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/3/494894724/YN/UN/AV/109289942/mine-development-service-500x500.jpg",
-      icon: "🏗️",
+      icon: "https://5.imimg.com/data5/SELLER/Default/2025/3/494894724/YN/UN/AV/109289942/mine-development-service-500x500.jpg",
       title: "Development Service",
       description:
         "Offering you a complete choice of services which include Mine Development Service. Mine development service involves the planning excavation and construction of infrastructure in mining projects including drilling blasting and ore extraction to prepare the site for production.",
@@ -260,7 +262,7 @@ const ServicesSection = () => {
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/8/535216746/GO/GI/DU/109289942/solid-waste-biomining-500x500.jpeg",
-      icon: "🏗️",
+      icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216746/GO/GI/DU/109289942/solid-waste-biomining-500x500.jpeg",
       title: "Waste Management Services",
       description:
         "Pioneers in the industry, we offer Solid Waste Management, Solid Waste Management Equipment, Biomining Machines, Biomining Plant, Solid Waste Management Solutions and Solid Waste Biomining from India.",
@@ -268,7 +270,7 @@ const ServicesSection = () => {
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/8/535217040/MF/ZN/JZ/109289942/ajax-fiori-self-loading-concrete-mixer-500x500.jpeg",
-      icon: "🏗️",
+      icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535217040/MF/ZN/JZ/109289942/ajax-fiori-self-loading-concrete-mixer-500x500.jpeg",
       title: "Self Loading Concrete Mixer",
       description:
         "Pioneers in the industry, we offer Ajax Fiori Self Loading Concrete Mixer, Self Loading Concrete Mixer Truck and Concrete Mixer from India.",
@@ -276,7 +278,7 @@ const ServicesSection = () => {
     {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/3/494827156/WO/HT/OZ/109289942/rcc-digester-work-500x500.jpg",
-      icon: "🏗️",
+      icon: "https://5.imimg.com/data5/SELLER/Default/2025/3/494827156/WO/HT/OZ/109289942/rcc-digester-work-500x500.jpg",
       title: "Work Service",
       description:
         "Our team is experienced in constructing high-strength RCC digesters that meet industrial standards and client-specific requirements. Whether for wastewater treatment plants, biogas units, or industrial processing systems, we ensure every structure is built with quality materials, expert workmanship, and a commitment to safety and efficiency.",
