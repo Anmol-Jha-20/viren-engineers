@@ -227,27 +227,59 @@ const ServicesSection = () => {
   const services = [
     {
       image:
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=80",
+        "https://5.imimg.com/data5/SELLER/Default/2025/3/494881521/LJ/SB/AW/109289942/earthmoving-equipment-rental-service-500x500.jpeg",
       icon: "🏗️",
-      title: "Property Sketching",
+      title: "Rental Service",
       description:
-        "Builder Service typesetting construction. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Service Provider of a wide range of services which include Sandvik S6 Screen Crusher Machine Rental Service, Hitachi Zaxis 120 Rental Service, Tata Hitachi Super 210 Rental Service, Tata Hitachi 215 Quarry Rental Service, Alpha SP 453 Mobile Tower Crane Rental Service and Earthmoving Equipment Rental Service.",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=80",
-      icon: "📋",
-      title: "Project Planning",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216439/YB/JH/NK/109289942/tower-crane-rental-500x500.jpeg",
+      icon: "🏗️",
+      title: "Tower Crane Rental Services",
       description:
-        "Efficient project planning services. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Our service range includes a wide range of Mobile Tower Crane Sp 453, Tower Crane Rental, Mobile Tower Crane Rental Service, Construction Tower Crane Rental Service and Tower Crane 2418 Sp 453 Alpha.",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1000&q=80",
-      icon: "✏️",
-      title: "Interior Designing",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216570/FO/KN/VZ/109289942/screening-machine-500x500.jpeg",
+      icon: "🏗️",
+      title: "Screening Machinery",
       description:
-        "Creative interior designing services. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Service Provider of a wide range of services which include Kleemann MS 952 Screen Machine, Biomining Screen Machines and Screening Machine.",
+    },
+    {
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2025/3/494894724/YN/UN/AV/109289942/mine-development-service-500x500.jpg",
+      icon: "🏗️",
+      title: "Development Service",
+      description:
+        "Offering you a complete choice of services which include Mine Development Service. Mine development service involves the planning excavation and construction of infrastructure in mining projects including drilling blasting and ore extraction to prepare the site for production.",
+    },
+    {
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216746/GO/GI/DU/109289942/solid-waste-biomining-500x500.jpeg",
+      icon: "🏗️",
+      title: "Waste Management Services",
+      description:
+        "Pioneers in the industry, we offer Solid Waste Management, Solid Waste Management Equipment, Biomining Machines, Biomining Plant, Solid Waste Management Solutions and Solid Waste Biomining from India.",
+    },
+    {
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535217040/MF/ZN/JZ/109289942/ajax-fiori-self-loading-concrete-mixer-500x500.jpeg",
+      icon: "🏗️",
+      title: "Self Loading Concrete Mixer",
+      description:
+        "Pioneers in the industry, we offer Ajax Fiori Self Loading Concrete Mixer, Self Loading Concrete Mixer Truck and Concrete Mixer from India.",
+    },
+    {
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2025/3/494827156/WO/HT/OZ/109289942/rcc-digester-work-500x500.jpg",
+      icon: "🏗️",
+      title: "Work Service",
+      description:
+        "Our team is experienced in constructing high-strength RCC digesters that meet industrial standards and client-specific requirements. Whether for wastewater treatment plants, biogas units, or industrial processing systems, we ensure every structure is built with quality materials, expert workmanship, and a commitment to safety and efficiency.",
     },
   ];
 
