@@ -86,39 +86,36 @@ const Footer = () => {
           {/* Latest News Section */}
           <div className="lg:col-span-1">
             <h3 className="text-white font-semibold text-lg mb-6">
-              Latest News
+              Our Services
             </h3>
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-700 rounded mr-3 flex-shrink-0 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=100&h=100&fit=crop"
-                    alt="Planning Process"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <div>
                   <h4 className="text-white text-sm font-medium mb-1 leading-tight">
-                    Planning Process Needs to improve your Business.
+                    Rental Service
                   </h4>
-                  <p className="text-gray-400 text-xs">28 Dec, 2023</p>
                 </div>
               </div>
-
               <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-700 rounded mr-3 flex-shrink-0 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=100&h=100&fit=crop"
-                    alt="Project Management"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <div>
                   <h4 className="text-white text-sm font-medium mb-1 leading-tight">
-                    7 Tips To Move Your Project Move Forward.
+                    Tower Crane Rental Services
                   </h4>
-                  <p className="text-gray-400 text-xs">13 Oct, 2023</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div>
+                  <h4 className="text-white text-sm font-medium mb-1 leading-tight">
+                    Screening Machinery
+                  </h4>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div>
+                  <h4 className="text-white text-sm font-medium mb-1 leading-tight">
+                    Development Service
+                  </h4>
                 </div>
               </div>
             </div>
@@ -127,55 +124,29 @@ const Footer = () => {
           {/* Our Branches Section */}
           <div className="lg:col-span-1">
             <h3 className="text-white font-semibold text-lg mb-6">
-              Our Branches
+              Other Services
             </h3>
 
-            <div className="relative">
-              {/* World Map Background */}
-              <div className="w-full h-48 bg-gray-800 rounded-lg overflow-hidden relative">
-                <div className="absolute inset-0 opacity-20">
-                  <svg viewBox="0 0 300 150" className="w-full h-full">
-                    <defs>
-                      <pattern
-                        id="dots"
-                        patternUnits="userSpaceOnUse"
-                        width="20"
-                        height="20"
-                      >
-                        <circle
-                          cx="10"
-                          cy="10"
-                          r="1"
-                          fill="currentColor"
-                          opacity="0.3"
-                        />
-                      </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#dots)" />
-                  </svg>
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <div>
+                  <h4 className="text-white text-sm font-medium mb-1 leading-tight">
+                    Waste Management Services
+                  </h4>
                 </div>
-
-                {/* Location Markers */}
-                <div className="absolute top-8 left-12">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
+              </div>
+              <div className="flex items-start">
+                <div>
+                  <h4 className="text-white text-sm font-medium mb-1 leading-tight">
+                    Self Loading Concrete Mixer
+                  </h4>
                 </div>
-                <div className="absolute top-16 left-24">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-                </div>
-                <div className="absolute top-12 right-20">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-                </div>
-                <div className="absolute bottom-16 left-16">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-                </div>
-                <div className="absolute bottom-12 right-12">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-                </div>
-                <div className="absolute top-20 left-32">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-                </div>
-                <div className="absolute bottom-20 right-24">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
+              </div>
+              <div className="flex items-start">
+                <div>
+                  <h4 className="text-white text-sm font-medium mb-1 leading-tight">
+                    Work Service
+                  </h4>
                 </div>
               </div>
             </div>
@@ -187,9 +158,12 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="mb-4 lg:mb-0">
               <p className="text-gray-400 text-sm">
-                Copyrights 2024. All Rights are Reserved by{" "}
+                Copyrights 2025. All Rights are Reserved. &nbsp;
                 <span className="text-yellow-500 hover:text-yellow-400 cursor-pointer">
-                  expert-themes
+                  Designed by{" "}
+                  <a href="https://webvortexsolutions.com/" target="_main">
+                    webvortexsolutions
+                  </a>
                 </span>
               </p>
             </div>
