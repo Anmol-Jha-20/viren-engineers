@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.jpeg";
 
 const Footer = () => {
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className="absolute top-0 left-0 w-2 h-2 bg-yellow-500 rounded-sm"></div>
                   </div>
                 </div> */}
-                <img src={Logo} className="w-12 h-12" alt="Logo" />
+                <img src={Logo} className="w-16 h-16" alt="Logo" />
               </div>
               <div>
                 <h2 className="text-xl font-bold text-yellow-500 uppercase">

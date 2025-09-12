@@ -11,10 +11,10 @@ const HeroCarousel = () => {
       id: 1,
       backgroundImage:
         "https://expert-themes.com/html/emarat/images/main-slider/image-3.jpg",
-      title: "BUILT TO LEAD",
-      subtitle: "RELIABLE RENTALS",
+      title: "WE BUILD",
+      subtitle: "YOUR DREAM",
       description:
-        'Established in the year 2020 in Pune,Maharashtra, India, We “Viren Engineers And Contractors" engaged as the foremost Service Provider of Crane and Screen Machine Rental Services.',
+        "Established in 2020, Viren Engineers and Contractors is a Pune-based construction company specializing in civil and mechanical engineering. We deliver large-scale infrastructure projects across Maharashtra, backed by in-house expertise and a modern fleet of equipment. Our services include construction, equipment rentals, and mining operations.",
       buttons: [
         { text: "ABOUT US", type: "primary" },
         { text: "CONTACT", type: "secondary" },
@@ -24,9 +24,9 @@ const HeroCarousel = () => {
       id: 2,
       backgroundImage: HeroImage,
       title: "WE ARE THE BEST",
-      subtitle: "RENTAL EXPERTS",
+      subtitle: "CONSTRUCTION EXPERTS",
       description:
-        'Established in the year 2020 in Pune,Maharashtra, India, We “Viren Engineers And Contractors" engaged as the foremost Service Provider of Crane and Screen Machine Rental Services.',
+        "Established in 2020, Viren Engineers and Contractors is a Pune-based construction company specializing in civil and mechanical engineering. We deliver large-scale infrastructure projects across Maharashtra, backed by in-house expertise and a modern fleet of equipment. Our services include construction, equipment rentals, and mining operations.",
       buttons: [
         { text: "ABOUT US", type: "primary" },
         { text: "CONTACT", type: "secondary" },

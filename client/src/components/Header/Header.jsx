@@ -10,7 +10,7 @@ import {
   Dribbble,
   Clock,
 } from "lucide-react";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.jpeg";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,17 +37,24 @@ const Header = () => {
         { name: "Work Service", href: "/services/renovation" },
       ],
     },
-    // {
-    //   name: "PROJECTS",
-    //   href: "/projects",
-    //   dropdown: [
-    //     { name: "Residential", href: "/projects/residential" },
-    //     { name: "Commercial", href: "/projects/commercial" },
-    //     { name: "Industrial", href: "/projects/industrial" },
-    //     { name: "Infrastructure", href: "/projects/infrastructure" },
-    //     { name: "Portfolio", href: "/projects/portfolio" },
-    //   ],
-    // },
+    {
+      name: "PROJECTS",
+      href: "/projects",
+      dropdown: [
+        { name: "Stone Crusher & mining", href: "/projects/residential" },
+        {
+          name: "Screening Operations & Environmental",
+          href: "/projects/commercial",
+        },
+        { name: "Biomining Project", href: "/projects/industrial" },
+        { name: "Rental model projects", href: "/projects/infrastructure" },
+        { name: "Irrigation Projects", href: "/projects/portfolio" },
+        { name: "PWD Projects", href: "/projects/portfolio" },
+        { name: "Bridge Construction", href: "/projects/portfolio" },
+        { name: "MJP Projects", href: "/projects/portfolio" },
+        { name: "Private Completed Projects", href: "/projects/portfolio" },
+      ],
+    },
     // {
     //   name: "PAGES",
     //   href: "/pages",
@@ -196,7 +203,7 @@ const Header = () => {
                     <div className="w-2 h-4 bg-white"></div>
                   </div>
                 </div> */}
-                <img src={Logo} className="w-16 h-16" alt="Logo" />
+                <img src={Logo} className="w-20 h-20" alt="Logo" />
               </div>
               <div className="ml-3">
                 <h1 className="text-2xl lg:text-3xl font-bold uppercase text-gray-800 leading-tight">

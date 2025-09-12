@@ -106,13 +106,16 @@ const WhyChooseUs = () => {
                 variants={itemVariants}
                 className="text-gray-600 text-lg leading-relaxed"
               >
-                At Viren Engineers and Contractors, we don’t just rent machines
-                — we deliver dependable solutions that keep your projects
-                moving. Established in 2020 in Pune, Maharashtra, we have
-                quickly earned a reputation as a trusted service provider for
-                crane and screen machine rentals across various industries. Our
-                commitment to quality, safety, and on-time delivery sets us
-                apart in a competitive market.
+                Viren Engineers and Contractors is a dynamic construction
+                company with a proven track record of delivering high-quality
+                civil and mechanical infrastructure projects across Maharashtra.
+                With in-house expertise in building reservoirs, jack wells,
+                canals, bridges, and culverts, we provide end-to-end solutions
+                tailored for efficiency. Our advanced equipment fleet—including
+                Hywa trucks, Poclains, a mobile tower crane, and an RMC batching
+                plant—ensures timely, cost-effective execution. We also operate
+                high-capacity mining units with six screening machines
+                delivering up to 500 tons per hour.
               </motion.p>
             </div>
 

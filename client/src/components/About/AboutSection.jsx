@@ -51,7 +51,7 @@ const AboutSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Leaders in Crane & Machine Rentals
+              Civil, Mechanical & Equipment Experts
             </motion.h1>
 
             {/* Experience Badge */}
@@ -75,15 +75,18 @@ const AboutSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Founded in 2020 in Pune, Maharashtra, Viren Engineers and
-              Contractors has quickly become a trusted name in heavy machinery
-              rental services. Specializing in crane and screen machine rentals,
-              we provide reliable, high-performance equipment backed by a team
-              that knows the industry inside out. We don’t believe in delays,
-              shortcuts, or excuses — just solid machines, skilled support, and
-              on-time delivery. Whether it’s a large-scale construction project
-              or a time-sensitive industrial task, we make sure your operations
-              never stop moving.
+              We are versatile and dynamic construction company with a track
+              record of delivering high-quality projects across Maharashtra.
+              Specializing in civil and mechanical engineering, we have
+              established ourselves as a reliable partner in executing
+              large-scale infrastructure projects. With in-house expertise in
+              ground surface reservoirs, jack wells, water wells, canal
+              construction, bridges, and culverts, our team brings unmatched
+              efficiency to every project. Our diverse equipment fleet,
+              including Hywa trucks, Poclains, and our Alpha Mobile Tower Crane,
+              RMC batching plant, allows us to offer competitive pricing and
+              quick turnaround times. Other than this we do we have mining units
+              – six screen machines with production capacity of 500t/h.
             </motion.p>
 
             {/* Read More Button */}
