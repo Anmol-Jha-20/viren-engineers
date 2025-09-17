@@ -19,7 +19,7 @@ const Header = () => {
   const timeoutRef = useRef(null);
 
   const menuItems = [
-    { name: "HOME", href: "/", isActive: true },
+    { name: "HOME", href: "/" },
     {
       name: "ABOUT US",
       href: "/about",
@@ -28,13 +28,22 @@ const Header = () => {
       name: "SERVICES",
       href: "/services",
       dropdown: [
-        { name: "Rental Service", href: "/services/construction" },
-        { name: "Tower Crane Rental Services", href: "/services/architecture" },
-        { name: "Screening Machinery", href: "/services/interior" },
-        { name: "Development Service", href: "/services/management" },
-        { name: "Waste Management Services", href: "/services/consulting" },
-        { name: "Self Loading Concrete Mixer", href: "/services/renovation" },
-        { name: "Work Service", href: "/services/renovation" },
+        { name: "Rental Service", href: "/rental-service" },
+        {
+          name: "Tower Crane Rental Services",
+          href: "/tower-crane-rental-services",
+        },
+        { name: "Screening Machinery", href: "/screening-machinery" },
+        { name: "Development Service", href: "/development-service" },
+        {
+          name: "Waste Management Services",
+          href: "/waste-management-services",
+        },
+        {
+          name: "Self Loading Concrete Mixer",
+          href: "/self-loading-concrete-mixer",
+        },
+        { name: "Work Service", href: "/work-service" },
       ],
     },
     {
@@ -72,7 +81,7 @@ const Header = () => {
       href: "/blog",
     },
     { name: "GALLERY", href: "/gallery" },
-    { name: "CONTACT US", href: "/contact" },
+    { name: "CONTACT US", href: "/contact-us" },
   ];
 
   const handleMouseEnter = (index) => {
@@ -195,17 +204,13 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <div className="bg-gray-800 p-1 rounded-sm flex items-center justify-center">
-                {/* <div className="flex flex-col items-center">
-                  <div className="w-6 h-6 bg-yellow-500 mb-1"></div>
-                  <div className="flex space-x-1">
-                    <div className="w-2 h-4 bg-white"></div>
-                    <div className="w-2 h-4 bg-white"></div>
-                    <div className="w-2 h-4 bg-white"></div>
-                  </div>
-                </div> */}
-                <img src={Logo} className="w-20 h-20" alt="Logo" />
+                <img
+                  src={Logo}
+                  className="w-20 h-20 md:w-24 md:h-24 xl:w-24 xl:h-24 lg:w-24 lg:h-24 object-contain"
+                  alt="Logo"
+                />
               </div>
-              <div className="ml-3">
+              <div className="hidden md:block lg:block xl:block ml-3">
                 <h1 className="text-2xl lg:text-3xl font-bold uppercase text-gray-800 leading-tight">
                   Viren
                 </h1>

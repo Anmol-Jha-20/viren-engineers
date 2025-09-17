@@ -1,6 +1,8 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Logo from "../../assets/Logo.jpeg";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdCall, MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -157,6 +159,42 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="fixed bottom-6 left-0 z-9999">
+          <button
+            onClick={() =>
+              window.open(
+                "https://wa.me/918888822150?text=Hey!%20I%20am%20interested%20in%20your%20services.",
+                "_blank"
+              )
+            }
+            className="bg-green-600 hover:bg-green-700 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Need Help?"
+          >
+            <FaWhatsapp size={24} />
+          </button>
+        </div>
+        <div className="fixed bottom-6 right-0 z-9999">
+          <button
+            onClick={() => (window.location.href = "tel:+918888822150")}
+            className="bg-orange-400 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Need Help?"
+          >
+            <MdCall size={24} />
+          </button>
+        </div>
+
+        <div className="fixed bottom-28 right-0 z-9999">
+          <button
+            onClick={() =>
+              (window.location.href = "mailto:chavanviren14@gmail.com")
+            }
+            className="bg-orange-400 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+            aria-label="Email Us"
+          >
+            <MdEmail size={24} />
+          </button>
+        </div>
+
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -198,6 +236,13 @@ const Footer = () => {
                 href="#"
                 className="text-gray-300 hover:text-yellow-500 text-sm mx-3 transition-colors"
               >
+                Projects
+              </a>
+              <span className="text-gray-600 mx-1">|</span>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-yellow-500 text-sm mx-3 transition-colors"
+              >
                 Gallery
               </a>
               <span className="text-gray-600 mx-1">|</span>
@@ -205,7 +250,7 @@ const Footer = () => {
                 href="#"
                 className="text-gray-300 hover:text-yellow-500 text-sm mx-3 transition-colors"
               >
-                Blogs
+                Blog
               </a>
               <span className="text-gray-600 mx-1">|</span>
               <a

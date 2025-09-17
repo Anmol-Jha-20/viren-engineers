@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronRight, X } from "lucide-react";
+import HeroImage from "../../assets/Hero1.png";
+import ServicesSectionTemp from "../../components/Services/ServiceSectionTemp.jsx";
 
 const ServiceCard = ({ image, icon, title, description, index }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -74,7 +76,7 @@ const ServiceCard = ({ image, icon, title, description, index }) => {
           </p>
 
           <button className="text-yellow-400 font-semibold text-sm hover:text-yellow-500 transition-colors duration-200 self-start">
-            READ MORE →
+            CONTACT US →
           </button>
         </div>
       </motion.div>
@@ -82,29 +84,40 @@ const ServiceCard = ({ image, icon, title, description, index }) => {
   );
 };
 
-const ServicesSection = () => {
+function WasteManagementService() {
+  const [activeService, setActiveService] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const services = [
     {
       image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/3/494881521/LJ/SB/AW/109289942/earthmoving-equipment-rental-service-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216784/CD/KX/LB/109289942/biomining-plant-500x500.jpeg",
       icon: "https://5.imimg.com/data5/SELLER/Default/2025/3/494881521/LJ/SB/AW/109289942/earthmoving-equipment-rental-service-500x500.jpeg",
-      title: "Rental Service",
+      title: "Biomining Plant",
       description:
         "Service Provider of a wide range of services which include Sandvik S6 Screen Crusher Machine Rental Service, Hitachi Zaxis 120 Rental Service, Tata Hitachi Super 210 Rental Service, Tata Hitachi 215 Quarry Rental Service, Alpha SP 453 Mobile Tower Crane Rental Service and Earthmoving Equipment Rental Service.",
     },
     {
       image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216439/YB/JH/NK/109289942/tower-crane-rental-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216832/WN/BB/UC/109289942/solid-waste-management-solutions-500x500.jpeg",
       icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216439/YB/JH/NK/109289942/tower-crane-rental-500x500.jpeg",
-      title: "Tower Crane Rental Services",
+      title: "Solid Waste Management Solutions",
       description:
         "Our service range includes a wide range of Mobile Tower Crane Sp 453, Tower Crane Rental, Mobile Tower Crane Rental Service, Construction Tower Crane Rental Service and Tower Crane 2418 Sp 453 Alpha.",
     },
     {
       image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216570/FO/KN/VZ/109289942/screening-machine-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216394/HD/GM/OO/109289942/mobile-tower-crane-rental-service-500x500.jpeg",
       icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216570/FO/KN/VZ/109289942/screening-machine-500x500.jpeg",
-      title: "Screening Machinery",
+      title: "Solid Waste Management",
       description:
         "Service Provider of a wide range of services which include Kleemann MS 952 Screen Machine, Biomining Screen Machines and Screening Machine.",
     },
@@ -142,52 +155,105 @@ const ServicesSection = () => {
     },
   ];
 
+  const handleServiceClick = (serviceId) => {
+    if (isMobile) {
+      setActiveService(activeService === serviceId ? null : serviceId);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setActiveService(null);
+  };
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <p className="text-yellow-400 text-sm font-semibold uppercase tracking-wide mb-2">
-            Our Services
-          </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-            What's Our Offers
-          </h2>
-          <div className="w-16 h-1 bg-yellow-400 mx-auto"></div>
-        </motion.div>
+    <>
+      <div className="min-h-screen bg-gray-50">
+        {/* Header */}
+        <section className="relative h-64 md:h-80 lg:h-96 w-full overflow-hidden">
+          {/* Background Image with Overlay */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${HeroImage})`,
+            }}
+          />
 
-        {/* Service Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              image={service.image}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-              index={index}
-            />
-          ))}
-        </div>
+          {/* Content Container */}
+          <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8">
+              Waste Management Services
+            </h1>
 
-        {/* Pagination Dots */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex justify-center space-x-2 mt-12"
-        >
-          <div className="w-8 h-1 bg-yellow-400 rounded-full"></div>
-          <div className="w-4 h-1 bg-gray-300 rounded-full"></div>
-        </motion.div>
+            {/* Breadcrumb Navigation */}
+            <nav
+              className="flex items-center space-x-2 text-sm sm:text-base"
+              aria-label="Breadcrumb"
+            >
+              <a
+                href="/"
+                className="text-white hover:text-yellow-400 transition-colors duration-300 font-medium"
+                aria-label="Home"
+              >
+                HOME
+              </a>
+              <ChevronRight
+                className="w-4 h-4 text-yellow-400"
+                aria-hidden="true"
+              />
+              <span className="text-yellow-400 uppercase font-medium">
+                Waste Management Services
+              </span>
+            </nav>
+          </div>
+        </section>
+
+        <section className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50 relative overflow-hidden">
+          <div className="max-w-7xl mx-auto">
+            {/* Section Header */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <p className="text-yellow-400 text-sm font-semibold uppercase tracking-wide mb-2">
+                Our Waste Management Services
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                What's Our Offers
+              </h2>
+              <div className="w-16 h-1 bg-yellow-400 mx-auto"></div>
+            </motion.div>
+
+            {/* Service Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.map((service, index) => (
+                <ServiceCard
+                  key={index}
+                  image={service.image}
+                  icon={service.image}
+                  title={service.title}
+                  description={service.description}
+                  index={index}
+                />
+              ))}
+            </div>
+
+            {/* Pagination Dots */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="flex justify-center space-x-2 mt-12"
+            >
+              <div className="w-8 h-1 bg-yellow-400 rounded-full"></div>
+              <div className="w-4 h-1 bg-gray-300 rounded-full"></div>
+            </motion.div>
+          </div>
+        </section>
       </div>
-    </section>
+    </>
   );
-};
+}
 
-export default ServicesSection;
+export default WasteManagementService;
