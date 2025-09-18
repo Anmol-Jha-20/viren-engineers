@@ -73,7 +73,10 @@ const ServiceCard = ({ image, icon, title, description, index }) => {
             {description}
           </p>
 
-          <button className="text-yellow-400 font-semibold cursor-pointer text-sm hover:text-yellow-500 transition-colors duration-200 self-start">
+          <button
+            onClick={() => (window.location.href = "tel:+918888822150")}
+            className="text-yellow-400 font-semibold cursor-pointer text-sm hover:text-yellow-500 transition-colors duration-200 self-start"
+          >
             CONTACT US →
           </button>
         </div>

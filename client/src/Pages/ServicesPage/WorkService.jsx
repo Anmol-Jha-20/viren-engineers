@@ -14,11 +14,14 @@ import {
   DollarSign,
   Star,
   ChevronRight,
+  CheckCircle2,
+  Brush,
+  Wrench,
   X,
 } from "lucide-react";
 import HeroImage from "../../assets/Hero1.png";
 
-const ServicePage = () => {
+const WorkService = () => {
   const [isVisible, setIsVisible] = useState({});
 
   useEffect(() => {
@@ -61,98 +64,66 @@ const ServicePage = () => {
   const services = [
     {
       icon: <MapPin className="w-8 h-8" />,
-      title: "Planning & Surveying",
+      title: "Site Preparation & Foundation Work",
       description:
-        "Detailed project planning, geological surveying, and layout design to ensure efficient mine development.",
+        "Clearing, leveling, and preparing the site with precise foundation laying to provide a stable base for the RCC digester.",
     },
     {
       icon: <Mountain className="w-8 h-8" />,
-      title: "Excavation & Earthwork",
+      title: "Design & Planning",
       description:
-        "Site clearing, overburden removal, and excavation to establish access to the ore body.",
+        "Customized structural design and detailed project planning to meet your specific digester capacity and site requirements.",
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Drilling & Blasting",
+      title: "Material Selection & Procurement",
       description:
-        "Controlled and precise drilling and blasting operations to fragment rock and access mineral deposits.",
+        "Careful selection of high-quality reinforced cement concrete and materials to ensure long-lasting digester performance.",
     },
     {
-      icon: <ArrowRight className="w-8 h-8" />,
-      title: "Ore Extraction Preparation",
+      icon: <Wrench className="w-8 h-8" />,
+      title: "Reinforcement & Formwork Installation",
       description:
-        "Setup for initial ore extraction, including haulage routes, material handling systems, and storage planning.",
+        "Accurate placement of steel reinforcement and formwork setup to achieve structural integrity and durability.",
     },
     {
       icon: <Building2 className="w-8 h-8" />,
-      title: "Infrastructure Construction",
+      title: "Concrete Pouring & Curing",
       description:
-        "Building of necessary site infrastructure including access roads, drainage systems, and service platforms.",
+        "Professional casting of RCC with controlled pouring and curing techniques to ensure strength and longevity.",
+    },
+    {
+      icon: <CheckCircle2 className="w-8 h-8" />,
+      title: "Quality Control & Inspection",
+      description:
+        "Rigorous testing and inspection at every stage to guarantee compliance with safety and construction standards.",
+    },
+    {
+      icon: <Brush className="w-8 h-8" />,
+      title: "Final Finishing & Site Clean-up",
+      description:
+        "Finishing touches to the structure and thorough site cleaning, leaving your project ready for commissioning.",
     },
   ];
 
   const advantages = [
     {
       icon: <Star className="w-6 h-6" />,
-      text: "Skilled and experienced workforce",
+      text: "Skilled and Experienced Workforce",
     },
     {
       icon: <Settings className="w-6 h-6" />,
-      text: "Reliable, modern equipment",
+      text: "Reliable, Modern Equipment",
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      text: "Strong focus on safety and environmental compliance",
+      text: "Strong Focus on Safety and Environmental Compliance",
     },
-    { icon: <Clock className="w-6 h-6" />, text: "On-time project execution" },
-    {
-      icon: <DollarSign className="w-6 h-6" />,
-      text: "Cost-effective and scalable service options",
-    },
+    { icon: <Clock className="w-6 h-6" />, text: "On-Time Project Execution" },
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      {/* <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-slate-800 to-slate-900 text-white">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-            className="text-center"
-          >
-            <motion.h1
-              variants={fadeInUp}
-              className="text-4xl lg:text-6xl font-bold mb-6 leading-tight"
-            >
-              Development <span className="text-yellow-400">Services</span>
-            </motion.h1>
-            <motion.p
-              variants={fadeInUp}
-              className="text-xl lg:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed"
-            >
-              Complete range of development services to support your mining and
-              infrastructure projects from the ground up
-            </motion.p>
-            <motion.div
-              variants={fadeInUp}
-              className="flex flex-wrap justify-center items-center gap-6 text-sm lg:text-base text-gray-400"
-            >
-              <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-yellow-400" />
-                <span>Founded in 2020</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-yellow-400" />
-                <span>Pune, Maharashtra</span>
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section> */}
-
       <section className="relative h-64 md:h-80 lg:h-96 w-full overflow-hidden">
         {/* Background Image with Overlay */}
         <div
@@ -166,7 +137,7 @@ const ServicePage = () => {
         <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8">
-            Development Service
+            Work Service
           </h1>
 
           {/* Breadcrumb Navigation */}
@@ -186,7 +157,7 @@ const ServicePage = () => {
               aria-hidden="true"
             />
             <span className="text-yellow-400 uppercase font-medium">
-              Development Service
+              Work Service
             </span>
           </nav>
         </div>
@@ -204,14 +175,19 @@ const ServicePage = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
-                  Mine Development Service
+                  Digester RCC Work Service
                 </h2>
                 <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                  Our Mine Development Service is designed to prepare mining
-                  sites for full-scale production through systematic planning,
-                  excavation, and construction. We bring together technical
-                  expertise, reliable machinery, and a skilled workforce to
-                  execute all critical stages of mine development.
+                  An RCC Digester (Reinforced Cement Concrete Digester) is a
+                  robust, durable concrete structure designed for the anaerobic
+                  digestion of organic waste. This process naturally breaks down
+                  biodegradable materials in the absence of oxygen, converting
+                  them into valuable biogas and nutrient-rich digestate. Our RCC
+                  digesters are engineered to withstand harsh environmental
+                  conditions and ensure optimal performance in biogas plants. We
+                  deliver precise construction services that meet the highest
+                  standards, supporting efficient waste-to-energy conversion and
+                  promoting environmental sustainability.
                 </p>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -225,8 +201,8 @@ const ServicePage = () => {
               </div>
               <div className="relative">
                 <img
-                  src="https://5.imimg.com/data5/SELLER/Default/2025/3/494894723/PC/XM/VD/109289942/mine-development-service-500x500.jpg"
-                  alt="Development Service"
+                  src="https://5.imimg.com/data5/SELLER/Default/2025/3/494827153/XH/WX/KA/109289942/rcc-digester-work-500x500.jpg"
+                  alt="Work Service"
                   className="rounded"
                 />
               </div>
@@ -248,9 +224,10 @@ const ServicePage = () => {
               What's Included in Our Service
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Our comprehensive approach ensures that your mining site is
-              production-ready while maintaining the highest safety and
-              environmental standards.
+              Our comprehensive approach ensures your digester construction
+              project is durable, efficient, and built to support optimal biogas
+              production while adhering to strict quality and environmental
+              standards.
             </p>
           </motion.div>
 
@@ -297,11 +274,14 @@ const ServicePage = () => {
               </h2>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 Founded in 2020 in Pune, Maharashtra, Viren Engineers And
-                Contractors has become a trusted name in the construction and
-                mining support industry. While we are widely recognized for our
-                Crane Rental Services and Screen Machine Rental Services, our
-                expansion into Mine Development Services reflects our commitment
-                to offering end-to-end solutions for our clients.
+                Contractors has built a strong reputation in the construction
+                and infrastructure sector. With proven expertise in heavy civil
+                works and industrial services, we have expanded our capabilities
+                to include Digester RCC Work, delivering durable and
+                high-performance structures for biogas and waste management
+                projects. Our focus on quality, precision, and sustainability
+                makes us a trusted partner for eco-conscious infrastructure
+                development.
               </p>
 
               <div className="space-y-4">
@@ -337,10 +317,19 @@ const ServicePage = () => {
             >
               <div className="w-full h-96 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-2xl">
                 <img
-                  src="https://5.imimg.com/data5/SELLER/Default/2025/3/494767682/SI/LG/SA/109289942/stone-mining-operations-500x500.jpeg"
+                  src="https://5.imimg.com/data5/SELLER/Default/2025/3/494827151/HW/IH/QB/109289942/rcc-digester-work-500x500.jpg"
                   alt="Company Image"
                   className="absolute inset-0 w-full h-full object-cover rounded"
                 />
+                {/* <div className="text-center text-white">
+                  <Building2 className="w-20 h-20 mx-auto mb-4 text-yellow-400" />
+                  <h3 className="text-2xl font-bold mb-2">
+                    Professional Excellence
+                  </h3>
+                  <p className="text-gray-300">
+                    Trusted mining development solutions
+                  </p>
+                </div> */}
               </div>
             </motion.div>
           </div>
@@ -390,7 +379,7 @@ const ServicePage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-yellow-500 text-yellow-500 cursor-pointer hover:bg-yellow-500 hover:text-slate-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-lg"
+                className="border-2 border-yellow-500 cursor-pointer text-yellow-500 hover:bg-yellow-500 hover:text-slate-900 font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-lg"
                 onClick={() => (window.location.href = "tel:+918888822150")}
               >
                 Get Customized Quote
@@ -403,4 +392,4 @@ const ServicePage = () => {
   );
 };
 
-export default ServicePage;
+export default WorkService;

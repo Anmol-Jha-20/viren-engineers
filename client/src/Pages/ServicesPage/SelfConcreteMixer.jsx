@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight, X } from "lucide-react";
 import HeroImage from "../../assets/Hero1.png";
-import ServicesSectionTemp from "../../components/Services/ServiceSectionTemp.jsx";
 
 const ServiceCard = ({ image, icon, title, description, index }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -87,7 +86,7 @@ const ServiceCard = ({ image, icon, title, description, index }) => {
   );
 };
 
-function WasteManagementService() {
+function SelfConcreteMixer() {
   const [activeService, setActiveService] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -102,59 +101,27 @@ function WasteManagementService() {
   const services = [
     {
       image:
-        "https://equipmenttimes.in/uploads/images/202402/image_870x_65ccc4db09c42.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535217040/MF/ZN/JZ/109289942/ajax-fiori-self-loading-concrete-mixer-500x500.jpeg",
       icon: "https://5.imimg.com/data5/SELLER/Default/2025/3/494881521/LJ/SB/AW/109289942/earthmoving-equipment-rental-service-500x500.jpeg",
-      title: "Biomining Plant",
+      title: "Ajax Fiori Self Loading Concrete Mixer",
       description:
-        "A Biomining Plant is a facility where biological processes are used to extract metals and minerals from ores and waste materials, such as tailings or contaminated land. This technique uses microorganisms, such as bacteria or fungi, to facilitate the breakdown of ore or concentrate metal recovery.",
+        "Ajax Fiori Self Loading Concrete Mixer is a mobile unit that combines loading, mixing, and transporting of concrete in one machine. Ideal for remote sites and small to medium projects, it offers high efficiency, easy operation, and cost-effective on-site concrete production.",
     },
     {
       image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216832/WN/BB/UC/109289942/solid-waste-management-solutions-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535217031/FR/KD/GL/109289942/self-loading-concrete-mixer-truck-500x500.jpeg",
       icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216439/YB/JH/NK/109289942/tower-crane-rental-500x500.jpeg",
-      title: "Solid Waste Management Solutions",
+      title: "Self Loading Concrete Mixer Truck",
       description:
-        "Solid Waste Management Solutions refer to the strategies, technologies, and processes used to handle, process, and dispose of solid waste in an efficient, environmentally responsible manner. These solutions aim to reduce waste generation, improve waste recycling, and minimize the environmental impact of waste disposal.",
+        "A Self Loading Concrete Mixer Truck is a mobile, all-in-one machine that combines the functions of a loader, mixer, and transport vehicle. It automatically loads raw materials, mixes them into concrete, and delivers it directly to the site. Ideal for small to medium construction projects and remote locations, it improves efficiency by reducing the need for separate batching plants and manual labor.",
     },
     {
       image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216831/PI/UE/LS/109289942/solid-waste-management-solutions-500x500.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/8/535217090/CJ/PZ/QX/109289942/concrete-mixer-500x500.jpeg",
       icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216570/FO/KN/VZ/109289942/screening-machine-500x500.jpeg",
-      title: "Solid Waste Management",
+      title: "Concrete Mixer",
       description:
-        "Solid Waste Management (SWM) refers to the systematic process of collecting, transporting, processing, recycling, and disposing of solid waste materials in a manner that is efficient, safe, and environmentally responsible. It encompasses a range of activities that aim to reduce the impact of waste on human health, ecosystems, and the environment.",
-    },
-    {
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216680/GE/DG/QO/109289942/solid-waste-management-equipment-500x500.jpeg",
-      icon: "https://5.imimg.com/data5/SELLER/Default/2025/3/494894724/YN/UN/AV/109289942/mine-development-service-500x500.jpg",
-      title: "Solid Waste Management Equipment",
-      description:
-        "Solid Waste Management Equipment refers to the specialized machinery and tools used in various stages of the solid waste management process, including waste collection, transportation, sorting, processing, recycling, and disposal. They help streamline operations, reduce human labor, and improve the overall effectiveness of waste management systems.",
-    },
-    {
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/8/535216570/FO/KN/VZ/109289942/screening-machine-500x500.jpeg",
-      icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535216746/GO/GI/DU/109289942/solid-waste-biomining-500x500.jpeg",
-      title: "Solid Waste Biomining",
-      description:
-        "Solid Waste Biomining is a sustainable and innovative approach to managing legacy waste. By biologically treating and recovering materials from old landfills, biomining not only helps reclaim valuable land but also contributes to a cleaner environment and promotes a circular economy.",
-    },
-    {
-      image:
-        "https://equipmenttimes.in/uploads/images/202402/image_870x_65ccc4db09c42.jpg",
-      icon: "https://5.imimg.com/data5/SELLER/Default/2025/8/535217040/MF/ZN/JZ/109289942/ajax-fiori-self-loading-concrete-mixer-500x500.jpeg",
-      title: "Biomining Machines",
-      description:
-        "Biomining Machines are specialized mechanical and biological equipment used in the biomining process, where microorganisms (like bacteria) are employed to extract valuable metals from low-grade ores or mine waste. These machines help facilitate, support, and accelerate biological reactions by creating the right conditions for microbial activity.",
-    },
-    {
-      image:
-        "https://cdn.pixabay.com/photo/2012/02/27/17/05/garbage-17541_960_720.jpg",
-      icon: "https://5.imimg.com/data5/SELLER/Default/2025/3/494827156/WO/HT/OZ/109289942/rcc-digester-work-500x500.jpg",
-      title: "Waste Management Consultants",
-      description:
-        "Waste Management Consultants play a vital role in guiding organizations toward responsible, compliant, and sustainable waste practices. With expertise in waste auditing, regulatory compliance, system design, and sustainability strategies, they help turn waste challenges into opportunities for efficiency and environmental leadership.",
+        "A Concrete Mixer is a machine used to combine cement, aggregates (like sand or gravel), and water to form concrete. It mixes these ingredients thoroughly to produce a uniform and workable concrete mix. Concrete mixers come in various sizes and types, from small portable units to large truck-mounted mixers, and are essential equipment in construction for preparing concrete efficiently and consistently on-site or in batching plants.",
     },
   ];
 
@@ -184,7 +151,7 @@ function WasteManagementService() {
           <div className="relative z-10 flex flex-col justify-center h-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 md:mb-8">
-              Waste Management Services
+              Self Loading Concrete Mixer
             </h1>
 
             {/* Breadcrumb Navigation */}
@@ -204,7 +171,7 @@ function WasteManagementService() {
                 aria-hidden="true"
               />
               <span className="text-yellow-400 uppercase font-medium">
-                Waste Management Services
+                Self Loading Concrete Mixer
               </span>
             </nav>
           </div>
@@ -220,7 +187,7 @@ function WasteManagementService() {
               className="text-center mb-16"
             >
               <p className="text-yellow-400 text-sm font-semibold uppercase tracking-wide mb-2">
-                Our Waste Management Services
+                Our Self Loading Concrete Mixer
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
                 What's Our Offers
@@ -259,4 +226,4 @@ function WasteManagementService() {
   );
 }
 
-export default WasteManagementService;
+export default SelfConcreteMixer;
