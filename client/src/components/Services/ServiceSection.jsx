@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const ServiceCard = ({ image, icon, title, description, index }) => {
+const ServiceCard = ({ image, icon, title, description, index, link }) => {
   const [showDetails, setShowDetails] = useState(false);
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setShowDetails(!showDetails);
@@ -73,7 +75,13 @@ const ServiceCard = ({ image, icon, title, description, index }) => {
             {description}
           </p>
 
-          <button className="text-yellow-400 font-semibold text-sm hover:text-yellow-500 transition-colors duration-200 self-start">
+          <button
+            onClick={() => {
+              navigate(link);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="text-yellow-400 font-semibold text-sm cursor-pointer hover:text-yellow-500 transition-colors duration-200 self-start"
+          >
             READ MORE →
           </button>
         </div>
@@ -91,6 +99,7 @@ const ServicesSection = () => {
       title: "Rental Service",
       description:
         "Service Provider of a wide range of services which include Sandvik S6 Screen Crusher Machine Rental Service, Hitachi Zaxis 120 Rental Service, Tata Hitachi Super 210 Rental Service, Tata Hitachi 215 Quarry Rental Service, Alpha SP 453 Mobile Tower Crane Rental Service and Earthmoving Equipment Rental Service.",
+      link: "/rental-service",
     },
     {
       image:
@@ -99,6 +108,7 @@ const ServicesSection = () => {
       title: "Tower Crane Rental Services",
       description:
         "Our service range includes a wide range of Mobile Tower Crane Sp 453, Tower Crane Rental, Mobile Tower Crane Rental Service, Construction Tower Crane Rental Service and Tower Crane 2418 Sp 453 Alpha.",
+      link: "/tower-crane-rental-services",
     },
     {
       image:
@@ -107,6 +117,7 @@ const ServicesSection = () => {
       title: "Screening Machinery",
       description:
         "Service Provider of a wide range of services which include Kleemann MS 952 Screen Machine, Biomining Screen Machines and Screening Machine.",
+      link: "/screening-machinery",
     },
     {
       image:
@@ -115,6 +126,7 @@ const ServicesSection = () => {
       title: "Development Service",
       description:
         "Offering you a complete choice of services which include Mine Development Service. Mine development service involves the planning excavation and construction of infrastructure in mining projects including drilling blasting and ore extraction to prepare the site for production.",
+      link: "/development-service",
     },
     {
       image:
@@ -123,6 +135,7 @@ const ServicesSection = () => {
       title: "Waste Management Services",
       description:
         "Pioneers in the industry, we offer Solid Waste Management, Solid Waste Management Equipment, Biomining Machines, Biomining Plant, Solid Waste Management Solutions and Solid Waste Biomining from India.",
+      link: "/waste-management-services",
     },
     {
       image:
@@ -131,6 +144,7 @@ const ServicesSection = () => {
       title: "Self Loading Concrete Mixer",
       description:
         "Pioneers in the industry, we offer Ajax Fiori Self Loading Concrete Mixer, Self Loading Concrete Mixer Truck and Concrete Mixer from India.",
+      link: "/self-loading-concrete-mixer",
     },
     {
       image:
@@ -139,6 +153,7 @@ const ServicesSection = () => {
       title: "Work Service",
       description:
         "Our team is experienced in constructing high-strength RCC digesters that meet industrial standards and client-specific requirements. Whether for wastewater treatment plants, biogas units, or industrial processing systems, we ensure every structure is built with quality materials, expert workmanship, and a commitment to safety and efficiency.",
+      link: "/work-service",
     },
   ];
 
@@ -171,6 +186,7 @@ const ServicesSection = () => {
               title={service.title}
               description={service.description}
               index={index}
+              link={service.link}
             />
           ))}
         </div>

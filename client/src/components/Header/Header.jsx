@@ -26,7 +26,7 @@ const Header = () => {
     },
     {
       name: "SERVICES",
-      href: "/services",
+      href: "#",
       dropdown: [
         { name: "Rental Service", href: "/rental-service" },
         {
@@ -78,7 +78,7 @@ const Header = () => {
     // },
     {
       name: "BLOG",
-      href: "/blog",
+      href: "#",
     },
     { name: "GALLERY", href: "/gallery" },
     { name: "CONTACT US", href: "/contact-us" },

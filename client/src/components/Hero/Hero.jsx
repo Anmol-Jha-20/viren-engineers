@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Settings } from "lucide-react";
 import HeroImage from "../../assets/Hero1.png";
+import { useNavigate } from "react-router-dom";
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   const slides = [
     {
@@ -16,8 +18,8 @@ const HeroCarousel = () => {
       description:
         "Established in 2020, Viren Engineers and Contractors is a Pune-based construction company specializing in civil and mechanical engineering. We deliver large-scale infrastructure projects across Maharashtra, backed by in-house expertise and a modern fleet of equipment. Our services include construction, equipment rentals, and mining operations.",
       buttons: [
-        { text: "ABOUT US", type: "primary" },
-        { text: "CONTACT", type: "secondary" },
+        { text: "ABOUT US", type: "primary", action: "about" },
+        { text: "CONTACT", type: "secondary", action: "contact" },
       ],
     },
     {
@@ -28,8 +30,8 @@ const HeroCarousel = () => {
       description:
         "Established in 2020, Viren Engineers and Contractors is a Pune-based construction company specializing in civil and mechanical engineering. We deliver large-scale infrastructure projects across Maharashtra, backed by in-house expertise and a modern fleet of equipment. Our services include construction, equipment rentals, and mining operations.",
       buttons: [
-        { text: "ABOUT US", type: "primary" },
-        { text: "CONTACT", type: "secondary" },
+        { text: "ABOUT US", type: "primary", action: "about" },
+        { text: "CONTACT", type: "secondary", action: "contact" },
       ],
     },
     // {
@@ -61,6 +63,14 @@ const HeroCarousel = () => {
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const handleButtonClick = (action) => {
+    if (action === "about") {
+      navigate("/about");
+    } else if (action === "contact") {
+      window.location.href = "tel:+918888822150";
+    }
   };
 
   const slideVariants = {
@@ -214,11 +224,12 @@ const HeroCarousel = () => {
                         key={index}
                         whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
-                        className={`px-8 py-4 text-sm font-bold tracking-wider transition-all duration-300 ${
+                        className={`px-8 py-4 text-sm font-bold tracking-wider cursor-pointer transition-all duration-300 ${
                           button.type === "primary"
                             ? "bg-yellow-500 text-black hover:bg-yellow-400 hover:shadow-lg"
                             : "border-2 border-white text-white hover:bg-white hover:text-black"
                         }`}
+                        onClick={() => handleButtonClick(button.action)}
                       >
                         {button.text}
                       </motion.button>

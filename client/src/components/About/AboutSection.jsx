@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AboutImage from "../../assets/About.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -91,13 +94,14 @@ const AboutSection = () => {
 
             {/* Read More Button */}
             <motion.button
-              className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-orange-300"
+              className="bg-orange-400 hover:bg-orange-500 cursor-pointer text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-orange-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/about")}
             >
               READ MORE
             </motion.button>

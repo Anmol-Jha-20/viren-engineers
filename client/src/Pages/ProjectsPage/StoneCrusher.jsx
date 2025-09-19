@@ -324,7 +324,10 @@ const StoneCrusherSection = () => {
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 {mobileDetailView.details}
               </p>
-              <button className="text-amber-500 text-sm font-medium hover:text-amber-600 transition-colors duration-200 flex items-center gap-1">
+              <button
+                onClick={() => (window.location.href = "tel:+918888822150")}
+                className="text-amber-500 text-sm font-medium hover:text-amber-600 transition-colors duration-200 flex items-center gap-1"
+              >
                 Contact Us
                 <span>→</span>
               </button>

@@ -8,10 +8,12 @@ import MjpProject from "../../assets/projects/MjpProject.webp";
 import privateProject from "../../assets/projects/privateProject.webp";
 import pwdImage from "../../assets/projects/pwdimage.webp";
 import ScreeningOperations from "../../assets/projects/ScreeningOperations.webp";
+import { useNavigate } from "react-router-dom";
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const checkMobile = () => {
@@ -181,7 +183,10 @@ const ProjectsSection = () => {
                     <h3 className="text-white text-xl font-bold mb-2">
                       {project.title}
                     </h3>
-                    <button className="flex items-center text-yellow-500 text-sm font-medium hover:text-yellow-400 transition-colors">
+                    <button
+                      onClick={() => navigate("/projects")}
+                      className="flex items-center text-yellow-500 text-sm font-medium hover:text-yellow-400 transition-colors"
+                    >
                       See Project <ChevronRight className="ml-1 w-4 h-4" />
                     </button>
                   </div>
@@ -219,7 +224,10 @@ const ProjectsSection = () => {
                     </p>
                   </div>
 
-                  <button className="flex items-center text-yellow-500 text-sm font-medium hover:text-yellow-400 transition-colors self-start">
+                  <button
+                    onClick={() => navigate("/projects")}
+                    className="flex items-center text-yellow-500 text-sm font-medium hover:text-yellow-400 transition-colors self-start"
+                  >
                     See Project <ChevronRight className="ml-1 w-4 h-4" />
                   </button>
                 </div>
@@ -237,7 +245,10 @@ const ProjectsSection = () => {
                     </p>
                   </div>
 
-                  <button className="flex items-center text-yellow-500 text-sm font-medium hover:text-yellow-400 transition-colors self-start">
+                  <button
+                    onClick={() => navigate("/projects")}
+                    className="flex items-center text-yellow-500 text-sm font-medium hover:text-yellow-400 transition-colors self-start"
+                  >
                     See Project <ChevronRight className="ml-1 w-4 h-4" />
                   </button>
                 </div>
