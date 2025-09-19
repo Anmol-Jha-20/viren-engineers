@@ -47,9 +47,10 @@ const Footer = () => {
             </div>
 
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
-              Established in the year 2020 in Pune,Maharashtra, India, We “Viren
-              Engineers And Contractors" engaged as the foremost Service
-              Provider of Crane and Screen Machine Rental Services.
+              Founded in 2020, Viren Engineers and Contractors is a Pune-based
+              firm specializing in civil and mechanical projects across
+              Maharashtra. We offer construction, equipment rentals, and mining
+              services.
             </p>
           </div>
 

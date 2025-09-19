@@ -102,8 +102,7 @@ const VirenGallery = () => {
     {
       id: 1,
       title: "Stone Crusher & Mining",
-      description:
-        "Major highway infrastructure development project spanning 200km",
+      description: "Stone crushing plant developed for mining operations",
       image: ProjectImage1,
       location: "Maharashtra",
       year: "2023-2024",
@@ -112,8 +111,7 @@ const VirenGallery = () => {
     {
       id: 2,
       title: "Screening Operations & Environmental",
-      description:
-        "Modern 15-story commercial building with sustainable design",
+      description: "High-efficiency material screening system installation",
       image: ProjectImage2,
       location: "Pune",
       year: "2023",
@@ -122,8 +120,7 @@ const VirenGallery = () => {
     {
       id: 3,
       title: "Biomining Project",
-      description:
-        "State-of-the-art manufacturing facility with advanced mechanical systems",
+      description: "Sustainable biomining operations for waste processing",
       image: ProjectImage3,
       location: "Nashik",
       year: "2024",
@@ -132,8 +129,7 @@ const VirenGallery = () => {
     {
       id: 4,
       title: "Rental model projects",
-      description:
-        "Luxury residential project with modern amenities and infrastructure",
+      description: "Infrastructure developed under equipment rental model",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/3/494768529/EZ/SO/KF/109289942/tata-zaxis-120-500x500.jpeg",
       location: "Pune",
@@ -143,7 +139,8 @@ const VirenGallery = () => {
     {
       id: 5,
       title: "Irrigation Projects",
-      description: "Major bridge infrastructure connecting two districts",
+      description:
+        "Delivered comprehensive irrigation for agriculture and water management.",
       image: ProjectImage6,
       location: "Satara",
       year: "2024",
@@ -152,8 +149,7 @@ const VirenGallery = () => {
     {
       id: 6,
       title: "PWD Projects",
-      description:
-        "Comprehensive mining infrastructure and processing facilities",
+      description: "PWD bridges built for strength, safety, and reliability.",
       image: ProjectImage7,
       location: "Kolhapur",
       year: "2023",
@@ -163,7 +159,7 @@ const VirenGallery = () => {
       id: 7,
       title: "Bridge Construction",
       description:
-        "Comprehensive mining infrastructure and processing facilities",
+        "Bridges constructed to withstand environmental and structural demands.",
       image: ProjectImage8,
       location: "Kolhapur",
       year: "2023",
@@ -173,7 +169,7 @@ const VirenGallery = () => {
       id: 8,
       title: "MJP Projects",
       description:
-        "Comprehensive mining infrastructure and processing facilities",
+        "Implemented MJP projects for sustainable water distribution networks.",
       image: ProjectImage9,
       location: "Kolhapur",
       year: "2023",
@@ -183,7 +179,7 @@ const VirenGallery = () => {
       id: 9,
       title: "Private Completed Projects",
       description:
-        "Comprehensive mining infrastructure and processing facilities",
+        "Executed diverse private projects: sheds, solar, and crushers.",
       image: ProjectImage10,
       location: "Kolhapur",
       year: "2023",

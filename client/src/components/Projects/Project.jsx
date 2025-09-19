@@ -247,7 +247,7 @@ const ProjectsSection = () => {
 
                   <button
                     onClick={() => navigate("/projects")}
-                    className="flex items-center text-yellow-500 text-sm font-medium hover:text-yellow-400 transition-colors self-start"
+                    className="flex items-center text-yellow-500 text-sm cursor-pointer font-medium hover:text-yellow-400 transition-colors self-start"
                   >
                     See Project <ChevronRight className="ml-1 w-4 h-4" />
                   </button>
