@@ -49,20 +49,20 @@ const Header = () => {
     {
       name: "PROJECTS",
       href: "/projects",
-      dropdown: [
-        { name: "Stone Crusher & mining", href: "/projects/residential" },
-        {
-          name: "Screening Operations & Environmental",
-          href: "/projects/commercial",
-        },
-        { name: "Biomining Project", href: "/projects/industrial" },
-        { name: "Rental model projects", href: "/projects/infrastructure" },
-        { name: "Irrigation Projects", href: "/projects/portfolio" },
-        { name: "PWD Projects", href: "/projects/portfolio" },
-        { name: "Bridge Construction", href: "/projects/portfolio" },
-        { name: "MJP Projects", href: "/projects/portfolio" },
-        { name: "Private Completed Projects", href: "/projects/portfolio" },
-      ],
+      // dropdown: [
+      //   { name: "Stone Crusher & mining", href: "/stone-crusher-mining" },
+      //   {
+      //     name: "Screening Operations & Environmental",
+      //     href: "/projects/commercial",
+      //   },
+      //   { name: "Biomining Project", href: "/projects/industrial" },
+      //   { name: "Rental model projects", href: "/projects/infrastructure" },
+      //   { name: "Irrigation Projects", href: "/projects/portfolio" },
+      //   { name: "PWD Projects", href: "/projects/portfolio" },
+      //   { name: "Bridge Construction", href: "/projects/portfolio" },
+      //   { name: "MJP Projects", href: "/projects/portfolio" },
+      //   { name: "Private Completed Projects", href: "/projects/portfolio" },
+      // ],
     },
     // {
     //   name: "PAGES",

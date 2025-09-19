@@ -31,7 +31,7 @@ const ProjectsSection = () => {
       category: "ARCHITECTURE",
       image: StoneImage,
       description:
-        "Beyond our expertise in construction, Viren Engineer and Contractors also operates a stone crusher which has been in operation since 2016. Each season, we develop the crusher to meet evolving project requirements. With a focus on fast expansion and development, we manage complete mine-to-crusher operations, delivering properly sized boulders and high-quality black stone. ",
+        "Beyond our expertise in construction, Viren Engineer and Contractors also operates a stone crusher which has been in operation since 2016. Each season, we develop the crusher to meet evolving project requirements. With a focus on fast expansion and development, we manage complete mine-to-crusher operations, delivering properly sized boulders and high-quality black stone.",
     },
     {
       id: 2,

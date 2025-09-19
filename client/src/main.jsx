@@ -14,6 +14,7 @@ import SelfConcreteMixer from "./Pages/ServicesPage/SelfConcreteMixer.jsx";
 import WorkService from "./Pages/ServicesPage/WorkService.jsx";
 import AboutPage from "./Pages/AboutUs.jsx";
 import VirenGallery from "./Pages/Gallery.jsx";
+import StoneCrusherSection from "./Pages/ProjectsPage/StoneCrusher.jsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <VirenGallery />,
+      },
+      {
+        path: "/projects",
+        element: <StoneCrusherSection />,
       },
     ],
   },
