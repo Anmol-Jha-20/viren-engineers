@@ -272,8 +272,8 @@ const Header = () => {
               ))}
 
               {/* Search Icon */}
-              {/* <button className="text-gray-600 hover:text-yellow-600 transition-colors duration-200 p-2 hover:bg-gray-50 rounded-full">
-                <Search className="w-5 h-5" />
+              {/* <button className="text-gray-700 font-bold uppercase hover:text-yellow-600 transition-colors duration-200 hover:bg-gray-50 rounded-full">
+                Get Quote
               </button> */}
             </nav>
 
