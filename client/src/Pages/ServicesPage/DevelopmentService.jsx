@@ -17,6 +17,8 @@ import {
   X,
 } from "lucide-react";
 import HeroImage from "../../assets/Hero1.png";
+import MineDevelopmentImageOne from "../../assets/Mine_Development/MineDevelopmentOne.jpeg";
+import MineDevelopmentImageTwo from "../../assets/Mine_Development/MineDevelopmentTwo.jpeg";
 
 const ServicePage = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -223,11 +225,11 @@ const ServicePage = () => {
                   <ArrowRight className="w-5 h-5" />
                 </motion.button>
               </div>
-              <div className="relative">
+              <div className="relative h-96">
                 <img
-                  src="https://5.imimg.com/data5/SELLER/Default/2025/3/494894723/PC/XM/VD/109289942/mine-development-service-500x500.jpg"
+                  src={MineDevelopmentImageOne}
                   alt="Development Service"
-                  className="rounded"
+                  className="absolute inset-0 w-full h-full object-cover rounded"
                 />
               </div>
             </div>
@@ -337,7 +339,7 @@ const ServicePage = () => {
             >
               <div className="w-full h-96 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-2xl">
                 <img
-                  src="https://5.imimg.com/data5/SELLER/Default/2025/3/494767682/SI/LG/SA/109289942/stone-mining-operations-500x500.jpeg"
+                  src={MineDevelopmentImageTwo}
                   alt="Company Image"
                   className="absolute inset-0 w-full h-full object-cover rounded"
                 />
